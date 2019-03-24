@@ -27,6 +27,9 @@ gem 'jquery-rails'
 gem 'bcrypt', '~> 3.1.7'
 gem 'materialize-sass', '~> 1.0.0'
 gem 'material_icons' 
+gem 'devise'
+gem 'twitter-bootstrap-rails'
+gem 'devise-bootstrap-views'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
