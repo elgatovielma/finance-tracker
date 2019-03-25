@@ -9,6 +9,11 @@ class User < ApplicationRecord
   has_many :user_stocks
   has_many :stocks, through: :user_stocks
 
+  def full_name
+    return "#{first_name} #{last_name}".strip if (first_name || last_name)
+    "Annonymous"
+  end
+
   def stock_already_added?(ticker_sysmbol)
     stock = Stock.find_by_ticker(ticker_sysmbol)
     return false unless stock 
